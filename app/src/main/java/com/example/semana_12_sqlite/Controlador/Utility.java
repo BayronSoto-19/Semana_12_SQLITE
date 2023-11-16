@@ -11,7 +11,7 @@ public class Utility {
 
 
     public static final String CREAR_TABLA_USUARIO="CREATE TABLE "
-            +TABLE_USUARIO+" ("+CAMPO_ID+ " INTEGER, "+ CAMPO_NOMBRE+" TEXT, "+ CAMPO_CORREO+" TEXT)";
+            +TABLE_USUARIO+" ("+CAMPO_ID+ "INTEGER, "+ CAMPO_NOMBRE+"TEXT, "+ CAMPO_CORREO+" TEXT)";
 
 }
 

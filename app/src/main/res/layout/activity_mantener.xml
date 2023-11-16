@@ -7,7 +7,7 @@
     tools:context=".Vista.mantener">
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/txtnombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="39dp"
@@ -16,14 +16,14 @@
         android:layout_marginBottom="62dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Nombre"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText3"
+        android:hint="Nombre"
+        app:layout_constraintBottom_toTopOf="@+id/txtcorreo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtid" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/txtid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="39dp"
@@ -31,15 +31,15 @@
         android:layout_marginBottom="51dp"
         android:ems="10"
         android:inputType="text"
-        android:text="id"
-        app:layout_constraintBottom_toTopOf="@+id/editTextText3"
+        android:hint="id"
+        app:layout_constraintBottom_toTopOf="@+id/txtcorreo"
         app:layout_constraintEnd_toStartOf="@+id/btnSearh"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/txtcorreo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="39dp"
@@ -48,19 +48,23 @@
         android:layout_marginBottom="99dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Correo"
+        android:hint="Correo"
         app:layout_constraintBottom_toTopOf="@+id/btnUpdate"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtid" />
 
     <Button
         android:id="@+id/btnSearh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Buscar"
-        tools:layout_editor_absoluteX="302dp"
-        tools:layout_editor_absoluteY="47dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
 
     <Button
         android:id="@+id/btnUpdate"

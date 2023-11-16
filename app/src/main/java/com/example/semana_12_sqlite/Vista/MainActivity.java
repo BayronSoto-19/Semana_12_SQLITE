@@ -11,7 +11,7 @@ import com.example.semana_12_sqlite.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btRegistro, listarUsuarios;
+    Button btRegistro, listarUsuarios, MantenerUsuario;
 
 
     @Override
@@ -31,17 +31,29 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        MantenerUsuario = findViewById(R.id.button2);
+
+        MantenerUsuario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(getApplicationContext(), mantener.class);
+                startActivity(intent);
+            }
+        });
+
 
         listarUsuarios = findViewById(R.id.button3);
 
         listarUsuarios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Intent intent = new Intent(getApplicationContext(), listar.class);
                 startActivity(intent);
             }
         });
+
+
 
     }
 }
